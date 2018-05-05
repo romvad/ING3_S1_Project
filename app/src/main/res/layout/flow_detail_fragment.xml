@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<android.support.v7.widget.Toolbar
+            android:id="@+id/edit_toolbar"
+            style="@style/toolbarStyle"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"
+            android:elevation="4dp"/>-->
+
+        <LinearLayout
+            style="@style/linearLayoutViewBody">
+            <!-- <View
+                 android:id="@+id/myRectangleView"
+                 android:layout_width="200dp"
+                 android:layout_height="50dp"
+                 android:background="@drawable/draw_around"/>-->
+            <ImageView
+                android:id="@+id/profilePicture"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@mipmap/ic_info"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/nameCurrentQueue"
+                style="@style/nameQueueDisplay"
+                android:text="Romain Vadam"
+                android:textAlignment="center"
+                />
+            <TextView
+                style="@style/sectionTitleDisplay"
+                android:text="@string/gene_info_queue_label"/>
+
+            <View style="@style/subtitleDivider" />
+            <LinearLayout
+                style="@style/linearLayoutPerinfo"
+                >
+                <TextView
+                    style="@style/labelStyle"
+                    android:text="@string/protocol_label"
+                    />
+                <TextView
+                    android:id="@+id/currentProtocol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UDP"/>
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                style="@style/linearLayoutPerinfo"
+                >
+
+                <TextView
+                    style="@style/labelStyle"
+                    android:text="@string/ip_src_label"
+                    />
+                <TextView
+                    android:id="@+id/currentIpSource"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="255.145.255.255"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayoutPerinfo"
+                >
+
+                <TextView
+                    style="@style/labelStyle"
+                    android:text="@string/ip_dest_label"
+                    />
+                <TextView
+                    android:id="@+id/currentIpDestination"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="123.145.6.7"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/linearLayoutPerinfo"
+                >
+
+                <TextView
+                    style="@style/labelStyle"
+                    android:text="@string/port_src_label"
+                    />
+                <TextView
+                    android:id="@+id/currentPortSource"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5000"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                style="@style/linearLayoutPerinfo"
+                >
+
+                <TextView
+                    style="@style/labelStyle"
+                    android:text="@string/port_dest_label"
+                    />
+                <TextView
+                    android:id="@+id/currentPortDestination"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4000"/>
+
+            </LinearLayout>
+            <LinearLayout
+                style="@style/linearLayoutPerinfo"
+                >
+
+                <TextView
+                    style="@style/labelStyle"
+                    android:text="@string/capacity_label"
+                    />
+                <TextView
+                    android:id="@+id/currentCapacity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1000"/>
+
+            </LinearLayout><LinearLayout
+            style="@style/linearLayoutPerinfo"
+            >
+
+            <TextView
+                style="@style/labelStyle"
+                android:text="@string/tos_label"
+                />
+            <TextView
+                android:id="@+id/currentTOS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50"/>
+
+        </LinearLayout>
+            <LinearLayout
+                style="@style/linearLayoutPerinfo"
+                >
+
+                <TextView
+                    style="@style/labelStyle"
+                    android:text="@string/bytecount_label"
+                    />
+                <TextView
+                    android:id="@+id/currentBytecount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500"/>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/sectionTitleDisplay"
+                android:text="@string/current_load_title"/>
+
+            <View style="@style/subtitleDivider" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            <ProgressBar
+
+                android:id="@+id/circularProgressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="200dp"
+                android:layout_height="125dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="25"
+                android:layout_centerInParent="true"
+                android:progressDrawable="@drawable/custom_circular_progress_bar"
+                android:secondaryProgress="80"
+                />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true" />
+
+
+                <TextView
+                    android:id="@+id/currentLoad"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="25%"
+                    android:textColor="@color/colorFullBlack"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/currentWaitingRate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/startColorSecondaryProgress"
+                    android:textStyle="bold"
+                    android:text="En attente: 20%"
+                    android:textSize="7dp"
+                    android:textAlignment="center"
+                    android:paddingTop="30dp"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

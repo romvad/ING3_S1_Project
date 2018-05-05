@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorFullBlack">#000000</color>
+    <color name="colorDividerListView">#d7d7e2</color>
+    <color name="colorNameDisplay">#414649</color>
+    <color name="colorSectionTitle">#0e69a0</color>
+    <color name="colorSectionDivider">#b27711</color>
+    <color name="startColorBackground">#77d6d6d6</color>
+    <color name="centerColorBackground">#998d918d</color>
+    <color name="endColorBackground">#979a97</color>
+    <color name="startColorSecondaryProgress">#91ff5e00</color>
+    <color name="centerColorSecondaryProgress">#c4ff8c00</color>
+    <color name="endColorSecondaryProgress">#c6ff8800</color>
+    <color name="startColorProgress">#4fda1a</color>
+    <color name="endColorProgress">#48be16</color>
+    <color name="centerColorProgress">#4fda1a</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorLightBlue">#28dcf7</color>
+</resources>

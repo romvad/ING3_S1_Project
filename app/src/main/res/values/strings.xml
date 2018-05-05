@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ProjetS1</string>
+    <string name="welcome_text_name">Bienvenue sur la section de visualisation des routeurs.\n Cliquez sur le bouton start pour commencer!</string>
+    <string name="titleListView">Liste des FA de:</string>
+    <string name="logoDescription">Qualité de service</string>
+
+    <string-array name="listOfRouters">
+
+    </string-array>
+    <string name="gene_info_queue_label">Informations générales sur le flux géré par cette FA</string>
+    <string name="protocol_label"><u>Protocole :</u></string>
+    <string name="ip_src_label"><u>IP source :</u></string>
+    <string name="ip_dest_label"><u>IP de destination :</u></string>
+    <string name="port_src_label"><u>Port source :</u></string>
+    <string name="port_dest_label"><u>Port de destination :</u></string>
+    <string name="capacity_label"><u>Cap. max. (en o) :</u></string>
+    <string name="bytecount_label"><u>Bytecount (en o) </u>:</string>
+    <string name="tos_label"><u>TOS :</u></string>
+    <string name="current_load_title">Charge relative courante de la FA</string>
+    <string name="message_current_load">Charge actuelle :</string>
+    <string name="bytecount_indication">BC:</string>
+    <string name="name_router_label">Liste des FA de: </string>
+    <string name="waiting_size_packet_label">Taille totale des paquets en attente: </string>
+
+</resources>

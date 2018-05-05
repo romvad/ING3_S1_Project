@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/layoutBlockNameAndProgressbar"
+        android:orientation="vertical"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:fontFamily="arial"
+            android:text="File 1"
+            android:includeFontPadding="false"
+            />
+
+       <!-- <ProgressBar
+            android:progressDrawable="@drawable/custom_progress_bar_horizontal"
+            style="?android:attr/progressBarStyleHorizontal"
+
+            android:id="@+id/mf_progress_bar"
+            app:layout_widthPercent="80%"
+            app:layout_heightPercent="8%"
+            app:layout_marginTopPercent="5%"
+            android:layout_gravity="center_horizontal"
+            />-->
+        <!--style="@style/Widget.AppCompat.ProgressBar.Horizontal"-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp">
+            <ProgressBar
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:theme="@style/ProgressBarHorizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:progressDrawable="@drawable/custom_progress_bar_horizontal"
+                android:secondaryProgress="30"
+                android:progress="10"
+                android:max="100"
+                />
+            <TextView
+                android:id="@+id/currentAbsoluteLoad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/message_current_load"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:id="@+id/leftMarker"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+<!--<ImageView
+    android:layout_width="16dp"
+    android:layout_height="16dp"
+    android:layout_centerInParent="true"
+    android:src="@drawable/triangle_shape" />-->
+    <ImageView
+        style="@style/triangleArrow"/>
+    <!--<TextView
+        android:id="@+id/valueLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorLightBlue"
+        android:text="0"
+        android:textSize="7dp"
+        android:layout_gravity="center"/>-->
+    <TextView
+        android:id="@+id/valueLeft"
+       style="@style/numericMarker"
+        android:text="0"
+       />
+</LinearLayout>
+        <LinearLayout
+            android:id="@+id/bytecountMarker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="185dp">
+
+            <!--<ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/triangle_shape" />-->
+            <ImageView
+                style="@style/triangleArrow"/>
+            <!--<TextView
+                android:id="@+id/valueLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorLightBlue"
+                android:text="0"
+                android:textSize="7dp"
+                android:layout_gravity="center"/>-->
+            <TextView
+                android:id="@+id/valueBytecount"
+                style="@style/numericMarker"
+                android:text="BC:1000"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/rightMarker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <!--<ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/triangle_shape" />-->
+            <ImageView
+                style="@style/triangleArrow"
+                />
+            <!--<TextView
+                android:id="@+id/valueLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorLightBlue"
+                android:text="0"
+                android:textSize="7dp"
+                android:layout_gravity="center"/>-->
+            <TextView
+                android:id="@+id/valueRight"
+                style="@style/numericMarker"
+                android:text="1500"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/layoutArrowRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_arrow_right"/>
+</RelativeLayout>
+</LinearLayout>
+
+
+
+
+
+
+
